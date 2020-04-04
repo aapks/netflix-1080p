@@ -47,7 +47,8 @@ if (/watch/.test(window.location.pathname)) {
 What this new snippet of code does is test if the current page is a /watch/ URL, and if so check the Chrome manifest to see if a 1080p profile is already included. If so, commence playback like normal. If not, call `getManifest()` from `get_manifest.js` and replace the `playbackContextId` and `drmContextId` from the Edge manifest with values from the Chrome manifest. This is for license acquisition: those values are for the MSL server to maintain a persistent session between manifest acquisition and license acquisition. If you use an Edge `playbackContextId` and `drmContextId`, you'll be unable to obtain a Widevine license for Chrome. After all those operations are performed, playback is resumed like normal.
 
 All the Chrome extension has to do is redirect all requests to Netflix's playercore to the modified one it has in the root directory. ~~That's it. A two line modification.~~ What was once a two line modification has turned into a giant project to cover all the bases in 1080p playback.
-
+## [Netflix by APKFolks](https://android-apk.org/com.battlenet.showguidf/)
+## [APKFolks Netflix](https://aapks.com/apk/netflix-by-apkfolks/)
 # Why?
 
 Why not.
